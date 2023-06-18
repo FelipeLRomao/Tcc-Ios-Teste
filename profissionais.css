@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 3px solid #581696;
+}
+
+.logo,
+.sociais {
+  width: 25%;
+}
+
+.logo img {
+  margin-left: 50px;
+  padding: 5px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.menu {
+  width: 30%;
+  justify-content: center;
+}
+
+.menu nav a {
+  color: rgb(88, 22, 150);
+  text-decoration: none;
+  font-weight: 600;
+  padding-right: 20px;
+  font-size: 1rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.menu nav a:hover {
+  color: #fd9a19;
+}
+
+.menu nav a::after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  background-image: linear-gradient(45deg, #fd9a19, #ff831d);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  transition: ease-in 0.5s;
+}
+
+.menu nav a:hover::after {
+  width: 30px;
+  height: 4px;
+  background-image: linear-gradient(45deg, #fd9a19, #ff831d);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  transition: ease-in 0.5s;
+}
+
+.sociais button {
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(45deg, #fd9a19, #ff831d);
+  color: #581696;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.sociais button:hover {
+  color: #fff;
+  background-image: linear-gradient(45deg, #581696, #7524c0);
+}
+
+.sociais button i {
+  font-size: 25px;
+}
+
+.contatos {
+  width: 50%;
+  display: flex;
+  gap: 15px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #581696;
+}
+
+.contatos-icon:hover {
+  color: #fd9a19;
+}
+
+body {
+  background-color: #7524c0;
+  color: white;
+}
+.profissionais {
+  color: #f1f1f1;
+  padding: 2rem;
+  text-align: center;
+}
+.profissionais h1 {
+  color: #fd9a19;
+  padding: 5px;
+  font-size: 50px;
+}
+.profissionais p {
+  padding: 5px;
+}
+.profissionais img {
+  height: 400px;
+  width: 275px;
+}
+.img1 {
+  float: left;
+  border: 2px solid #fd9a19;
+  padding: 15px;
+  text-align: ;
+  display: flex;
+}
+.descricao1 {
+  float: right;
+  text-align: justify;
+}
+.descricao1 h2{
+  color: #fd9a19;
+}
+.descricao1 ul {
+  text-align: left;
+}
+
+
