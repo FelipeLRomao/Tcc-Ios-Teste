@@ -1,16 +1,18 @@
+
 .content__slider{
-  background: linear-gradient(72deg, #3DEBB0 1%, #8956F3 99%);
-  height: 900px;
-  width: 100%; 
-  overflow: hidden;
-  position: absolute;
+    background: linear-gradient(72deg, #3DEBB0 1%, #8956F3 99%);
+    height: 850px;
+    width: 100%; 
+    overflow: hidden;
+    z-index: -1;
+  }
+  /*position: fixed;
   margin-top: 0;
   padding-top: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
-}
+  */
 
 
 .navigation{
@@ -22,7 +24,7 @@
 }
 
 .bar{
-    width: 70px;
+    width: 50px;
     height: 17px;
     border: 2px solid #fff;
     margin: 6px;
