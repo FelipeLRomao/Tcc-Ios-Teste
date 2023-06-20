@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/583fac72a4.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>IntegraTec</title>
+    <!-- CSS da Página -->
+    <link rel="stylesheet" href="styleproj.css">
+    <title>Projetos</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+            <div class="menu">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Profissionais</a>
+                    <a href="#">Projeto</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </div>
+            <div class="sociais">
+                <button><i class="fa-brands fa-square-instagram"></i></button>
+                <button><i class="fa-brands fa-facebook"></i></i></button>
+                <button><i class="fa-brands fa-square-whatsapp"></i></button>
+            </div>
+            <div class="contatos">
+                <i class="fa-solid fa-envelope contatos-icon"></i>
+                <p>contato@integratec.com.br</p>
+                <i class="fa-solid fa-phone-volume contatos-icon"></i>
+                <p>(11)2233-4455</p>
+                <i class="fa-solid fa-phone-volume contatos-icon"></i>
+                <p>(11)97788-4433</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="section">
+            <h1>Projetos anteriores</h1>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus amet suscipit quam possimus. Voluptas recusandae perferendis sint ipsa,
+                quidem cum quae ratione labore incidunt eveniet, quaerat,
+                autem saepe voluptatibus officia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+        </section>
+        <div class="card">
+            <img src="gif1.gif" alt="GIF 1">
+            <figcaption class="overlay">
+                <img src="gif1.gif" alt="GIF 1 (expandido)">
+                <span class="close-btn">&times;</span>
+            </figcaption>
+            <span>Projeto exemplo 1</span>
+        </div>
+        <div class="card">
+            <img src="gif2.gif" alt="GIF 2">
+            <figcaption class="overlay">
+                <img src="gif2.gif" alt="GIF 2 (expandido)">
+                <span class="close-btn">&times;</span>
+            </figcaption>
+            <span>Projeto exemplo 2</span>
+        </div>
+        <div class="card">
+            <img src="gif3.gif" alt="GIF 3">
+            <figcaption class="overlay">
+                <img src="gif3.gif" alt="GIF 3 (expandido)">
+                <span class="close-btn">&times;</span>
+            </figcaption>
+            <span>Projeto exemplo 3</span>
+        </div>
+        <div class="card">
+            <img src="gif4.gif" alt="GIF 4">
+            <figcaption class="overlay">
+                <img src="gif4.gif" alt="GIF 4 (expandido)">
+                <span class="close-btn">&times;</span>
+            </figcaption>
+            <span>Projeto exemplo 4</span>
+        </div>
+        <div class="card">
+            <img src="gif5.gif" alt="GIF 5">
+            <figcaption class="overlay">
+                <img src="gif5.gif" alt="GIF 5 (expandido)">
+                <span class="close-btn">&times;</span>
+            </figcaption>
+            <span>Projeto exemplo 5</span>
+        </div>
+        <div class="card">
+            <img src="gif6.gif" alt="GIF 6">
+            <figcaption class="overlay">
+                <img src="gif6.gif" alt="GIF 6 (expandido)">
+                <span class="close-btn">&times;</span>
+            </figcaption>
+            <span>Projeto exemplo 6</span>
+        </div>
+    </main>
+
+    <script>
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            const img = card.querySelector('img');
+            const overlay = card.querySelector('.overlay');
+            const closeBtn = card.querySelector('.close-btn');
+
+            img.addEventListener('click', () => {
+                overlay.style.display = 'flex';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                overlay.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
